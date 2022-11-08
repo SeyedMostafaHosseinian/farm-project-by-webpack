@@ -1,0 +1,76 @@
+$sound-text-color : blueviolet;
+     .sound-tx ,.food-tx{
+        width: 50px; 
+        height: 20px;
+        font-size: 10px;
+        border-radius: 10px;
+        background: #fff;
+        position: absolute;
+        top: -18px;
+        left: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        color: $sound-text-color;
+        &:after {
+         content: '';
+         position: absolute;
+         border-right: 10px solid #fff;
+         border-bottom: 10px solid transparent;
+         border-top: 10px solid transparent;
+         top: 12px;
+         transform: rotate(-90deg);
+       }
+    }
+  .food-tx{
+    width: 30px;
+    height: 30px;
+    top: -21px;
+    left: 6px;
+    & img {
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      border-right: 8px solid #fff;
+      border-bottom: 8px solid transparent;
+      border-top: 8px solid transparent;
+      top: 25px;
+      transform: rotate(-90deg);
+    }
+  }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main {
+    background-image:url('./assets/grass2.jpeg');
+    height: 1000px;
+    width: 100%;
+}
+#farm {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 30px 10px 10px ;
+    align-items: flex-start;
+    gap: 0;
+    > div {
+        position: relative;
+    }
+}
+.animal-el {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
+}
